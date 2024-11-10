@@ -16,10 +16,10 @@ module.exports = {
 		themes: [
 			{
 				light: {
-					...daisyThemes["light"],
 					primary: "#023A15",
-					secondary: "#FFFFFF",
-					accent: "#ACE6BC",
+					secondary: "#ACE6BC",
+					accent: "#FFFFFF",
+					"base-100": "#023A15" 
 				},
 				dark: {
 					...daisyThemes["dark"],
