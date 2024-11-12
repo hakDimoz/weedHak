@@ -2663,12 +2663,12 @@ details.collapse summary::-webkit-details-marker {
   margin-top: 1.25rem;
 }
 
-.mt-\[9\.5rem\] {
-  margin-top: 9.5rem;
-}
-
 .mt-8 {
   margin-top: 2rem;
+}
+
+.mt-\[9\.5rem\] {
+  margin-top: 9.5rem;
 }
 
 .flex {
@@ -2681,10 +2681,6 @@ details.collapse summary::-webkit-details-marker {
 
 .hidden {
   display: none;
-}
-
-.aspect-video {
-  aspect-ratio: 16 / 9;
 }
 
 .size-20 {
@@ -3202,20 +3198,16 @@ details.collapse summary::-webkit-details-marker {
     margin-top: 2.5rem;
   }
 
-  .lg\:mt-auto {
-    margin-top: auto;
-  }
-
   .lg\:mt-24 {
     margin-top: 6rem;
   }
 
-  .lg\:flex {
-    display: flex;
+  .lg\:mt-auto {
+    margin-top: auto;
   }
 
-  .lg\:h-full {
-    height: 100%;
+  .lg\:flex {
+    display: flex;
   }
 
   .lg\:h-auto {
@@ -3226,36 +3218,6 @@ details.collapse summary::-webkit-details-marker {
     max-height: 100%;
   }
 
-  .lg\:max-h-none {
-    max-height: none;
-  }
-
-  .lg\:w-0 {
-    width: 0px;
-  }
-
-  .lg\:w-auto {
-    width: auto;
-  }
-
-  .lg\:w-full {
-    width: 100%;
-  }
-
-  .lg\:w-96 {
-    width: 24rem;
-  }
-
-  .lg\:w-fit {
-    width: -moz-fit-content;
-    width: fit-content;
-  }
-
-  .lg\:w-min {
-    width: -moz-min-content;
-    width: min-content;
-  }
-
   .lg\:min-w-52 {
     min-width: 13rem;
   }
@@ -3264,44 +3226,12 @@ details.collapse summary::-webkit-details-marker {
     min-width: 24rem;
   }
 
-  .lg\:max-w-96 {
-    max-width: 24rem;
-  }
-
-  .lg\:max-w-md {
-    max-width: 28rem;
-  }
-
-  .lg\:max-w-8 {
-    max-width: 2rem;
-  }
-
   .lg\:max-w-80 {
     max-width: 20rem;
   }
 
-  .lg\:max-w-72 {
-    max-width: 18rem;
-  }
-
-  .lg\:max-w-full {
-    max-width: 100%;
-  }
-
-  .lg\:flex-none {
-    flex: none;
-  }
-
-  .lg\:flex-1 {
-    flex: 1 1 0%;
-  }
-
-  .lg\:flex-auto {
-    flex: 1 1 auto;
-  }
-
-  .lg\:flex-grow-0 {
-    flex-grow: 0;
+  .lg\:max-w-96 {
+    max-width: 24rem;
   }
 
   .lg\:-translate-x-1\/2 {
@@ -3327,10 +3257,6 @@ details.collapse summary::-webkit-details-marker {
     flex-direction: row;
   }
 
-  .lg\:flex-col {
-    flex-direction: column;
-  }
-
   .lg\:items-start {
     align-items: flex-start;
   }
@@ -3339,16 +3265,12 @@ details.collapse summary::-webkit-details-marker {
     align-items: center;
   }
 
-  .lg\:items-stretch {
-    align-items: stretch;
-  }
-
   .lg\:justify-center {
     justify-content: center;
   }
 
-  .lg\:justify-between {
-    justify-content: space-between;
+  .lg\:gap-14 {
+    gap: 3.5rem;
   }
 
   .lg\:gap-24 {
@@ -3361,26 +3283,6 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:gap-5 {
     gap: 1.25rem;
-  }
-
-  .lg\:gap-8 {
-    gap: 2rem;
-  }
-
-  .lg\:gap-3 {
-    gap: 0.75rem;
-  }
-
-  .lg\:gap-10 {
-    gap: 2.5rem;
-  }
-
-  .lg\:gap-1 {
-    gap: 0.25rem;
-  }
-
-  .lg\:gap-14 {
-    gap: 3.5rem;
   }
 
   .lg\:px-2 {
@@ -3399,48 +3301,40 @@ details.collapse summary::-webkit-details-marker {
 }
 
 @media (min-width: 1280px) {
-  .xl\:left-20 {
-    left: 5rem;
-  }
-
   .xl\:left-16 {
     left: 4rem;
   }
 
-  .xl\:grid {
-    display: grid;
-  }
-
-  .xl\:max-w-9 {
-    max-width: 2.25rem;
-  }
-
-  .xl\:max-w-52 {
-    max-width: 13rem;
+  .xl\:block {
+    display: block;
   }
 
   .xl\:max-w-96 {
     max-width: 24rem;
   }
 
-  .xl\:max-w-none {
-    max-width: none;
+  .xl\:flex-none {
+    flex: none;
   }
 
-  .xl\:grid-cols-\[repeat\] {
-    grid-template-columns: repeat;
+  .xl\:flex-col {
+    flex-direction: column;
   }
 
-  .xl\:grid-cols-\[repeat\(autofit\)\] {
-    grid-template-columns: repeat(autofit);
+  .xl\:items-center {
+    align-items: center;
   }
 
-  .xl\:grid-cols-\[repeat\(auto-fit\)\] {
-    grid-template-columns: repeat(auto-fit);
+  .xl\:justify-center {
+    justify-content: center;
   }
 
-  .xl\:gap-60 {
-    gap: 15rem;
+  .xl\:justify-between {
+    justify-content: space-between;
+  }
+
+  .xl\:gap-10 {
+    gap: 2.5rem;
   }
 
   .xl\:gap-x-44 {
@@ -3450,6 +3344,10 @@ details.collapse summary::-webkit-details-marker {
 
   .xl\:gap-y-20 {
     row-gap: 5rem;
+  }
+
+  .xl\:text-center {
+    text-align: center;
   }
 }
 
