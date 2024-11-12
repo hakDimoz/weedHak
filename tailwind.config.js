@@ -4,6 +4,7 @@ tailwindTheme = require("tailwindcss/defaultTheme");
 /** @type {import('tailwindcss').Config} */
 module.exports = {
 	content: ["./src/**/*.{html,js}"],
+	darkMode: "class",
 	theme: {
 		extend: {
 			fontFamily: {
@@ -23,9 +24,9 @@ module.exports = {
 				},
 				dark: {
 					...daisyThemes["dark"],
-					primary: "#A5B4FC",
-					secondary: "#7C3AED",
-					accent: "#C084FC",
+					primary: "#0C1E12",
+					secondary: "#70B293",
+					accent: "#ccfbf1",
 				},
 			},
 		],

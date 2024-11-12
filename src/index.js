@@ -8,15 +8,28 @@ document.addEventListener("DOMContentLoaded", () => {
 
 /////////////////// Theme toggler /////////////////////////////
 function addEventListenerToToggleThemeButton(rootElement) {
-	const toggleThemeButton = document.querySelector("#theme-toggler");
 	const themeKey = "theme";
 
 	initiliseTheme(themeKey, rootElement);
 
-	toggleThemeButton.addEventListener("click", () => {
-		toggleTheme(rootElement, themeKey);
-		updateCheckboxVisual(rootElement);
-	});
+	if (window.matchMedia("(min-width: 768px)").matches) {
+		// Screen size is over the md breakpoint (768px)
+		const toggleThemeButton = document.querySelector("#theme-toggler-md");
+		updateCheckboxVisual(rootElement, toggleThemeButton);
+		toggleThemeButton.addEventListener("click", () => {
+			toggleTheme(rootElement, themeKey);
+		});
+	} else {
+		// Screen size is less than 768px
+		const toggleThemeButton = document.querySelector("#theme-toggler");
+		const checkbox = document.querySelector("#theme-toggler-checkbox");
+		updateCheckboxVisual(rootElement, checkbox);
+		toggleThemeButton.addEventListener("click", () => {
+			toggleTheme(rootElement, themeKey);
+			updateCheckboxVisual(rootElement, checkbox);
+		});
+	}
+
 }
 
 function toggleTheme(rootElement, themeKey) {
@@ -37,11 +50,10 @@ function initiliseTheme(themeKey, rootElement) {
 	}
 }
 
-function updateCheckboxVisual(rootElement) {
-	const checkbox = document.querySelector("#theme-toggler-checkbox");
+function updateCheckboxVisual(rootElement, checkbox) {
 	const theme = rootElement.getAttribute("data-theme");
 
-	if (theme === "light") {
+	if (theme === "light" || theme === null) {
 		checkbox.checked = false;
 	} else {
 		checkbox.checked = true;
