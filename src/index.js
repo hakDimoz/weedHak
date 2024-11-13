@@ -29,7 +29,6 @@ function addEventListenerToToggleThemeButton(rootElement) {
 			updateCheckboxVisual(rootElement, checkbox);
 		});
 	}
-
 }
 
 function toggleTheme(rootElement, themeKey) {
@@ -108,4 +107,20 @@ function populateStarContainer(container) {
 	for (let i = 0; i < numberOfStars; i++) {
 		container.innerHTML += starSVG;
 	}
+}
+
+////////////// Review card text ////////////////////////
+function toggleText(textId, button) {
+    const text = document.getElementById(textId);
+
+    // Toggle the max-height classes
+    if (text.classList.contains('max-h-16')) {
+        text.classList.remove('max-h-16');
+        text.classList.add('max-h-full');
+        button.textContent = 'Show less';
+    } else {
+        text.classList.remove('max-h-full');
+        text.classList.add('max-h-16');
+        button.textContent = 'Show more';
+    }
 }

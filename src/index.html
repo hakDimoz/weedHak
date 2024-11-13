@@ -31,7 +31,7 @@
 						<!-- DROPDOWN MENU on small screens -->
 						<div class="dropdown md:hidden dropdown-end">
 							<!-- dropdown menu button -->
-							<button class="btn btn-ghost" tabindex="0">
+							<button class="btn btn-ghost" tabindex="0" aria-label="Dropdown Menu">
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
 									class="size-5 sm:size-8"
@@ -190,7 +190,7 @@
 				<div class="flex">
 					<div class="lg:relative">
 						<p
-							class="text-accent absolute -top-20 left-[5.2rem] sm:-top-24 lg:-top-4 lg:left-12 xl:left-16"
+							class="text-accent absolute -top-20 left-[5.2rem] sm:-top-24 lg:-top-4 lg:left-12 xl:left-20"
 						>
 							Hey im Hak!
 						</p>
@@ -253,6 +253,7 @@
 								<img
 									src="./assets/images/weeding.JPEG"
 									alt="Hakeem pulling out weeds from garden"
+									loading="lazy"
 									aria-hidden="true"
 									class="object-cover w-full h-full object-[20%_70%]"
 								/>
@@ -300,6 +301,7 @@
 								src="./assets/images/hedging.JPEG"
 								alt="Hakeem cutting hedge"
 								aria-hidden="true"
+								loading="lazy"
 								class="w-full h-full"
 							/>
 						</figure>
@@ -341,6 +343,7 @@
 							<img
 								src="./assets/images/lawn-mower.jpg"
 								alt="Lawn mower"
+								loading="lazy"
 								aria-hidden="true"
 								class="w-full h-full"
 							/>
@@ -464,6 +467,7 @@
 							<img
 								src="./assets/images/grass.jpg"
 								alt="Grass"
+								loading="lazy"
 								aria-hidden="true"
 								class="w-full h-full"
 							/>
@@ -495,7 +499,7 @@
 					What Hak's Clients Say
 				</h1>
 				<div class="flex flex-col mt-5 gap-4 lg:flex-row">
-					<div class="card bg-accent relative">
+					<div class="card bg-accent relative flex-1">
 						<svg
 							viewBox="0 0 100 100"
 							version="1.1"
@@ -530,7 +534,65 @@
 							</g>
 						</svg>
 						<div class="card-body px-6 pb-4">
-							<div class="flex flex-col text-primary gap-3">
+							<div class="flex flex-col text-primary gap-3 justify-between h-full">
+								<div>
+									<div class="star-container flex"></div>
+									<p class="">
+										Looking for a gardener who's both fast and thorough? Hakeem is your guy! I've hired Hakeem several times, and I'm amazed every time. He works at an incredible pace but never compromises on quality - a rare combination that makes his service truly exceptional. In just a few hours, he transforms my entire garden, and I always find myself thinking 'how did you do that so quickly!?' From expert hedging and lawn mowing to perfect edging, thorough weeding, and professional mulching, I've been consistently impressed with every aspect of his work. Best of all, he's just a great person - very respectful, listens carefully to what you need done, and then delivers exactly that. I couldn't recommend Hakeem more highly!
+									</p>
+								</div>
+								<div class="flex gap-1 justify-start items-center">
+									<div class="avatar">
+										<div class="w-10">
+											<img
+												src="./assets/images/hero-hak.png"
+												alt="Portrait"
+												class="rounded-full"
+											/>
+										</div>
+									</div>
+
+									<p class="text-sm">Kymberlie Dimozantos</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card bg-accent relative flex-1">
+						<svg
+							viewBox="0 0 100 100"
+							version="1.1"
+							xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink"
+							fill="currentColor"
+							class="absolute right-3 top-3 size-8"
+						>
+							<g
+								id="46.-Quotes"
+								stroke="none"
+								stroke-width="1"
+								fill="none"
+								fill-rule="evenodd"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							>
+								<g
+									transform="translate(2.000000, 14.000000)"
+									stroke="#023A15"
+									stroke-width="4"
+								>
+									<path
+										d="M11.8766845,71.8701029 C10.9267649,71.8701029 7.53956384,66.4867249 7.53956384,65.516381 C33.6266495,45.5308053 29.5109024,41.3986946 29.6634833,40.7829907 C29.8160642,40.1672868 21.2007682,43.12694 16.0752168,41.7523669 C4.51211273,38.6373542 -2.26170096,27.0475232 0.970681298,15.9161951 C3.59079632,6.89678762 12.2082147,0.595647454 21.9267422,0.595647454 C23.9064063,0.595647454 25.8831548,0.858584844 27.802564,1.37603814 C35.4277206,3.42807265 41.16068,9.52335436 43.94601,18.5352761 C46.4601931,26.6657493 46.3970227,36.5048478 43.7769076,45.5308053 C35.9408454,66.2601609 12.8266042,71.8701029 11.8766845,71.8701029 Z"
+										id="Layer-1"
+									></path>
+									<path
+										d="M61.3024271,71.8701029 C60.3525075,71.8701029 56.9653064,66.4867249 56.9653064,65.516381 C83.0523921,45.5308053 78.936645,41.3986946 79.0892259,40.7829907 C79.2418068,40.1672868 70.6265108,43.12694 65.5009594,41.7523669 C53.9378553,38.6373542 47.1640416,27.0475232 50.3964239,15.9161951 C53.0165389,6.89678762 61.6339573,0.595647454 71.3524848,0.595647454 C73.3321488,0.595647454 75.3088973,0.858584844 77.2283065,1.37603814 C84.8534632,3.42807265 90.5864226,9.52335436 93.3717526,18.5352761 C95.8859357,26.6657493 95.8227652,36.5048478 93.2026502,45.5308053 C85.366588,66.2601609 62.2523467,71.8701029 61.3024271,71.8701029 Z"
+										id="Layer-2"
+									></path>
+								</g>
+							</g>
+						</svg>
+						<div class="card-body px-6 pb-4">
+							<div class="flex flex-col text-primary gap-3 justify-between h-full">
 								<div>
 									<div class="star-container flex"></div>
 									<p class="">
@@ -545,6 +607,7 @@
 												src="./assets/images/hero-hak.png"
 												alt="Portrait"
 												class="rounded-full"
+												loading="lazy"
 											/>
 										</div>
 									</div>
@@ -554,7 +617,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="card bg-accent relative">
+					<div class="card bg-accent relative flex-1">
 						<svg
 							viewBox="0 0 100 100"
 							version="1.1"
@@ -589,7 +652,7 @@
 							</g>
 						</svg>
 						<div class="card-body px-6 pb-4">
-							<div class="flex flex-col text-primary gap-3">
+							<div class="flex flex-col text-primary gap-3 justify-between h-full">
 								<div>
 									<div class="star-container flex"></div>
 									<p class="">
@@ -602,65 +665,7 @@
 										<div class="w-10">
 											<img
 												src="./assets/images/hero-hak.png"
-												alt="Portrait"
-												class="rounded-full"
-											/>
-										</div>
-									</div>
-
-									<p class="text-sm">Bob Willis</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="card bg-accent relative">
-						<svg
-							viewBox="0 0 100 100"
-							version="1.1"
-							xmlns="http://www.w3.org/2000/svg"
-							xmlns:xlink="http://www.w3.org/1999/xlink"
-							fill="currentColor"
-							class="absolute right-3 top-3 size-8"
-						>
-							<g
-								id="46.-Quotes"
-								stroke="none"
-								stroke-width="1"
-								fill="none"
-								fill-rule="evenodd"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-							>
-								<g
-									transform="translate(2.000000, 14.000000)"
-									stroke="#023A15"
-									stroke-width="4"
-								>
-									<path
-										d="M11.8766845,71.8701029 C10.9267649,71.8701029 7.53956384,66.4867249 7.53956384,65.516381 C33.6266495,45.5308053 29.5109024,41.3986946 29.6634833,40.7829907 C29.8160642,40.1672868 21.2007682,43.12694 16.0752168,41.7523669 C4.51211273,38.6373542 -2.26170096,27.0475232 0.970681298,15.9161951 C3.59079632,6.89678762 12.2082147,0.595647454 21.9267422,0.595647454 C23.9064063,0.595647454 25.8831548,0.858584844 27.802564,1.37603814 C35.4277206,3.42807265 41.16068,9.52335436 43.94601,18.5352761 C46.4601931,26.6657493 46.3970227,36.5048478 43.7769076,45.5308053 C35.9408454,66.2601609 12.8266042,71.8701029 11.8766845,71.8701029 Z"
-										id="Layer-1"
-									></path>
-									<path
-										d="M61.3024271,71.8701029 C60.3525075,71.8701029 56.9653064,66.4867249 56.9653064,65.516381 C83.0523921,45.5308053 78.936645,41.3986946 79.0892259,40.7829907 C79.2418068,40.1672868 70.6265108,43.12694 65.5009594,41.7523669 C53.9378553,38.6373542 47.1640416,27.0475232 50.3964239,15.9161951 C53.0165389,6.89678762 61.6339573,0.595647454 71.3524848,0.595647454 C73.3321488,0.595647454 75.3088973,0.858584844 77.2283065,1.37603814 C84.8534632,3.42807265 90.5864226,9.52335436 93.3717526,18.5352761 C95.8859357,26.6657493 95.8227652,36.5048478 93.2026502,45.5308053 C85.366588,66.2601609 62.2523467,71.8701029 61.3024271,71.8701029 Z"
-										id="Layer-2"
-									></path>
-								</g>
-							</g>
-						</svg>
-						<div class="card-body px-6 pb-4">
-							<div class="flex flex-col text-primary gap-3">
-								<div>
-									<div class="star-container flex"></div>
-									<p class="">
-										Wow Hakeem is just the best gardener i've ever had! Wow
-										Hakeem is just the best gardener i've ever had!
-									</p>
-								</div>
-								<div class="flex gap-1 justify-start items-center">
-									<div class="avatar">
-										<div class="w-10">
-											<img
-												src="./assets/images/hero-hak.png"
+												loading="lazy"
 												alt="Portrait"
 												class="rounded-full"
 											/>
@@ -678,7 +683,7 @@
 			<!-- PRICING -->
 			<section id="pricing" class="lg:px-2">
 				<div class="lg:flex lg:justify-center lg:gap-24 xl:flex-col xl:gap-10 xl:items-center">
-					<div class="flex flex-col lg:max-w-96 lg:gap-5 xl:items-center xl:justify-center">
+					<div class="flex flex-col lg:max-w-96 lg:gap-5 xl:items-center xl:justify-center xl:max-w-2xl">
 						<div class="text-center mb-5 lg:text-left xl:text-center">
 							<h1 class="text-3xl text-secondary font-medium lg:mb-3">
 								Pricing
@@ -699,9 +704,10 @@
 								Contact Hak
 							</a>
 						</div>
+						<!-- Collapsable content -->
 						<div class="lg:mt-auto">
 							<div class="collapse collapse-arrow bg-base-200">
-								<input type="checkbox" />
+								<input type="checkbox" aria-label="Toggle collapsable content" />
 								<p class="collapse-title font-medium flex gap-1">
 									<span>
 										<svg
@@ -735,6 +741,7 @@
 						<img
 							src="./assets/images/victory.JPEG"
 							alt="Hakeem holding up a weed"
+							loading="lazy"
 							class="w-full h-[40rem] object-cover"
 						/>
 					</div>
@@ -749,6 +756,7 @@
 					<img
 						src="./assets/images/sydney.JPEG"
 						alt="Picture of Hakeem"
+						loading="lazy"
 						class="rounded-xl max-w-72 xl:max-w-96"
 					/>
 					<div>
@@ -781,8 +789,9 @@
 						class="flex flex-col justify-start items-start gap-3 lg:max-w-96"
 					>
 						<h1 class="text-secondary font-medium text-3xl">Contact Hak</h1>
+						<!-- Collapsable content -->
 						<div class="collapse collapse-arrow border border-accent mb-5">
-							<input type="checkbox" />
+							<input type="checkbox" aria-label="Toggle collapsable content"/>
 							<p class="collapse-title font-medium flex gap-1">
 								<span>
 									<svg
@@ -871,8 +880,8 @@
 								</p>
 
 								<div class="">
-									<form action="">
-										<label for="name" class="form-control">
+									<form action="https://formspree.io/f/xqakbdnj" method="post">
+										<label for="name" class="form-control" required>
 											<div class="label">
 												<span class="label-text">Name:</span>
 											</div>
@@ -881,7 +890,14 @@
 												name="name"
 												id="name"
 												class="input input-bordered w-full"
+												required
 											/>
+										</label>
+										<label for="email" class="form-control">
+											<div class="label">
+												<span class="label-text">Email:</span>
+											</div>
+											<input type="email" name="email" id="email" class="input input-bordered w-full" required>
 										</label>
 										<label for="message" class="form-control">
 											<div class="label">
@@ -892,6 +908,7 @@
 												id="message"
 												class="textarea textarea-bordered"
 												placeholder="Let me know what you want done, when and where!"
+												required
 											></textarea>
 										</label>
 										<button class="btn btn-secondary w-full text-primary mt-4">
