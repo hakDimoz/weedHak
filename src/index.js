@@ -124,3 +124,12 @@ function toggleText(textId, button) {
         button.textContent = 'Show more';
     }
 }
+
+
+////////////////// Website in progress msg /////////////////////////
+function showLinkNotReadyModal(event) {
+	event.preventDefault();
+	const messageModal = document.querySelector("#message-modal");
+
+	messageModal.showModal();
+}
